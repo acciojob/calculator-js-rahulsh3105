@@ -1,1 +1,45 @@
 /*  your css code here. If applicable */
+#calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#display {
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  text-align: right;
+  padding: 10px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f2f2f2;
+}
+
+button:active {
+  background-color: #e2e2e2;
+}
+
